@@ -1,0 +1,23 @@
+type Query{
+    customers: [Customer]
+    findCustomerById(id: ID!): Customer
+}
+
+type Mutation{
+    addCustomer(name: String!): Customer
+}
+
+type Customer{
+    id: ID
+    name: String
+    cars: [Car]
+}
+
+type Car{
+    id: ID
+    customerId: ID
+    brand: String
+}
+
+
+

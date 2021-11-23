@@ -1,0 +1,11 @@
+server:
+  port: 8280
+spring:
+  application:
+    name: graphql-gateway
+web-client:
+  customers-client-url: http://localhost:8270
+  cars-client-url: http://localhost:8260
+logging:
+  level:
+    reactor.netty.http.client: TRACE
