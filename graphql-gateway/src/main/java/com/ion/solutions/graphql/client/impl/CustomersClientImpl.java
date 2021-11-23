@@ -34,7 +34,6 @@ public class CustomersClientImpl implements CustomersClient {
 
     @Override
     public Flux<Customer> getCustomersList() {
-        log.info("custCLi {}", clientConfig.getCustomersClientUrl());
         return webClient
                 .get()
                 .uri("/api/v1/customers")
