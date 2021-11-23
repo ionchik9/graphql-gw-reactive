@@ -1,6 +1,6 @@
 server:
   port: 8080
 web-client:
-  auth-client-url: http://localhost:9292
-  profiles.url: http://localhost:8989
+  customers-client-url: http://customers
+  cars-client-url: http://cars
 
